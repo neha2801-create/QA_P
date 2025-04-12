@@ -53,44 +53,6 @@ const CheckCircle = (props) => (
   </svg>
 );
 
-const XCircle = (props) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={props.size || 24}
-    height={props.size || 24}
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth={2}
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className={props.className}
-  >
-    <circle cx="12" cy="12" r="10"></circle>
-    <line x1="15" y1="9" x2="9" y2="15"></line>
-    <line x1="9" y1="9" x2="15" y2="15"></line>
-  </svg>
-);
-
-const AlertCircle = (props) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={props.size || 24}
-    height={props.size || 24}
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth={2}
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className={props.className}
-  >
-    <circle cx="12" cy="12" r="10"></circle>
-    <line x1="12" y1="8" x2="12" y2="12"></line>
-    <line x1="12" y1="16" x2="12.01" y2="16"></line>
-  </svg>
-);
-
 function AmazonPrimeTestingApp() {
   const [expandedSections, setExpandedSections] = useState({
     delivery: true,
@@ -195,22 +157,21 @@ function AmazonPrimeTestingApp() {
   return (
     <div className="max-w-5xl mx-auto p-6">
       <header className="mb-8 text-center">
-        <h1 className="text-3xl font-bold mb-2">Prime Black Box Testing Scenarios</h1>
+        <h1 className="text-3xl font-bold mb-2">Amazon Prime Black Box Testing Scenarios</h1>
         <p className="text-gray-600">
-          Comprehensive test cases for Prime benefits and features
+          Comprehensive test cases for Amazon Prime benefits and features
+          <a 
+            href="https://www.amazon.com/gp/help/customer/display.html?nodeId=G6LDPN7YJHYKH2J6#:~:text=Buy%20with%20Prime%3A%20Enjoy%20Prime,participating%20online%20stores%20beyond%20Amazon."
+            className="ml-2 inline-flex items-center px-3 py-1 text-sm font-medium text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-colors duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+            Reference Link
+          </a>
         </p>
-        <a 
-        href="https://www.amazon.com/gp/help/customer/display.html?nodeId=G6LDPN7YJHYKH2J6#:~:text=Buy%20with%20Prime%3A%20Enjoy%20Prime,participating%20online%20stores%20beyond%20Amazon."
-        className="ml-2 inline-flex items-center px-3 py-1 text-sm font-medium text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-colors duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
-        target="_blank"
-        rel="noopener noreferrer"
-        >
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 20 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-        </svg>
-        Reference Link
-        </a>
-    
       </header>
       
       <main>
