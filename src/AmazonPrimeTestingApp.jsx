@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { ResumeSection } from './ResumeSection';
 
 // Custom icon components using inline SVGs
 const ChevronDown = (props) => (
